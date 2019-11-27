@@ -1,0 +1,29 @@
+PODS:
+  - HGImageBrowser (1.0.0):
+    - SDWebImage
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
+  - TZImagePickerController (3.2.1)
+
+DEPENDENCIES:
+  - HGImageBrowser (from `../`)
+  - TZImagePickerController
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SDWebImage
+    - TZImagePickerController
+
+EXTERNAL SOURCES:
+  HGImageBrowser:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HGImageBrowser: da98df323648eeb9bcce22c5948af3aa5dacb63d
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  TZImagePickerController: bf4c57b98d8707fce41ea6be872414a71c7a8c9d
+
+PODFILE CHECKSUM: ecde1ae0140e0d4fbe87a8aa1cbfef2451a26b6b
+
+COCOAPODS: 1.6.1

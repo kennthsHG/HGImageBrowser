@@ -1,0 +1,6 @@
+framework module HGImageBrowser {
+  umbrella header "HGImageBrowser-umbrella.h"
+
+  export *
+  module * { export * }
+}
