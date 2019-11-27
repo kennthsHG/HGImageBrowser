@@ -7,12 +7,20 @@
 //
 
 #import "HGIMAGEBROWSERAppDelegate.h"
+#import "HGIMAGEBROWSERViewController.h"
 
 @implementation HGIMAGEBROWSERAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+    HGIMAGEBROWSERViewController *vc = [[HGIMAGEBROWSERViewController alloc]init];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

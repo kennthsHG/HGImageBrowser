@@ -38,8 +38,8 @@
 
 /* Begin PBXFileReference section */
 		0C4C367BDEA6AC9304E7EA8E /* Pods-HGImageBrowser_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGImageBrowser_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HGImageBrowser_Tests/Pods-HGImageBrowser_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2C6DF3350D5F639B28498880 /* HGImageBrowser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HGImageBrowser.podspec; path = ../HGImageBrowser.podspec; sourceTree = "<group>"; };
-		3D1222CA89B479957E5A7387 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2C6DF3350D5F639B28498880 /* HGImageBrowser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HGImageBrowser.podspec; path = ../HGImageBrowser.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3D1222CA89B479957E5A7387 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		49C01FF7833A2A19C03A30C8 /* Pods_HGImageBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HGImageBrowser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* HGImageBrowser_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HGImageBrowser_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -66,7 +66,7 @@
 		A30C6ACAB30E294B019910E0 /* Pods-HGImageBrowser_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGImageBrowser_Tests.release.xcconfig"; path = "Target Support Files/Pods-HGImageBrowser_Tests/Pods-HGImageBrowser_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C4852697F65E6489754BA91E /* Pods-HGImageBrowser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGImageBrowser_Example.release.xcconfig"; path = "Target Support Files/Pods-HGImageBrowser_Example/Pods-HGImageBrowser_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DB3DA50C4F6B4B559EFFD3E5 /* Pods_HGImageBrowser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HGImageBrowser_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC83AE547D4924BEFFC310BA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		EC83AE547D4924BEFFC310BA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				0C4C367BDEA6AC9304E7EA8E /* Pods-HGImageBrowser_Tests.debug.xcconfig */,
 				A30C6ACAB30E294B019910E0 /* Pods-HGImageBrowser_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +208,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				35CB2E56F9C8C993BA1F707D /* [CP] Embed Pods Frameworks */,
+				71C687D35576B2AAE475162F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,6 +248,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "黄 纲";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = M75M5VC229;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +261,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -326,17 +330,41 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HGImageBrowser_Example/Pods-HGImageBrowser_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/HGImageBrowser/HGImageBrowser.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HGImageBrowser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HGImageBrowser_Example/Pods-HGImageBrowser_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71C687D35576B2AAE475162F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HGImageBrowser_Example/Pods-HGImageBrowser_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/HGImageBrowser/HGImageBrowserResource.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HGImageBrowserResource.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HGImageBrowser_Example/Pods-HGImageBrowser_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD8ED9935011EBE633FCD006 /* [CP] Check Pods Manifest.lock */ = {
@@ -498,6 +526,7 @@
 			baseConfigurationReference = 80ACC50EDC17DBC863021686 /* Pods-HGImageBrowser_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M75M5VC229;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HGImageBrowser/HGImageBrowser-Prefix.pch";
 				INFOPLIST_FILE = "HGImageBrowser/HGImageBrowser-Info.plist";
@@ -514,6 +543,7 @@
 			baseConfigurationReference = C4852697F65E6489754BA91E /* Pods-HGImageBrowser_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M75M5VC229;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HGImageBrowser/HGImageBrowser-Prefix.pch";
 				INFOPLIST_FILE = "HGImageBrowser/HGImageBrowser-Info.plist";

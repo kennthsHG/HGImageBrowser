@@ -8,35 +8,32 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HGImageBrowser'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of HGImageBrowser.'
+  s.version          = '1.0.1'
+  s.summary          = '自定义图片视频展示库'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = '自定义图片视频展示库，可展示图片，视频，支持URL，Image，Asset，Path'
 
-  s.homepage         = 'https://github.com/黄 纲/HGImageBrowser'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/kennthsHG/HGImageBrowser'
+
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '黄 纲' => '362168751@qq.com' }
-  s.source           = { :git => 'https://github.com/黄 纲/HGImageBrowser.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'kennthsHG' => '362168751@qq.com' }
+  s.source           = { :git => 'https://github.com/kennthsHG/HGImageBrowser.git', :tag => s.version }
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'HGImageBrowser/Classes/**/*'
+  s.source_files = 'HGImageBrowser/Classes/**/*.{h,m}'
   
-  # s.resource_bundles = {
-  #   'HGImageBrowser' => ['HGImageBrowser/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.resource_bundles = {
+    'HGImageBrowserResource' => ['HGImageBrowser/Assets/*.png']
+  }
+  
+  s.prefix_header_contents =
+  '#import "HGImageBrowserMacro.h"'
+  
+  s.frameworks = 'UIKit','Photos'
+  
+  s.dependency 'SDWebImage'
+  
+  s.static_framework  =  true
 end
