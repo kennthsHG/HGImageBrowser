@@ -1,9 +1,6 @@
 # HGImageBrowser
 
-[![CI Status](https://img.shields.io/travis/黄 纲/HGImageBrowser.svg?style=flat)](https://travis-ci.org/黄 纲/HGImageBrowser)
-[![Version](https://img.shields.io/cocoapods/v/HGImageBrowser.svg?style=flat)](https://cocoapods.org/pods/HGImageBrowser)
-[![License](https://img.shields.io/cocoapods/l/HGImageBrowser.svg?style=flat)](https://cocoapods.org/pods/HGImageBrowser)
-[![Platform](https://img.shields.io/cocoapods/p/HGImageBrowser.svg?style=flat)](https://cocoapods.org/pods/HGImageBrowser)
+自定义图片视频展示库，可展示图片，视频，支持URL，Image，Asset，Path
 
 ## Example
 
