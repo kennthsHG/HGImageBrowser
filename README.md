@@ -17,7 +17,7 @@ pod 'HGImageBrowser'
 ```
 
 ## How to use it
-
+```ruby
 HGPhotoItem *imageItem = [[HGPhotoItem alloc]initWithSourceView:self.imageview image:nil thumbImage:self.imageview.image imageUrl:[NSURL URLWithString:@"http://116.7.226.222:10001/static/material/img/inbound/267cceced7504c9cb3cafbf0b2e378a0/d9a9a281-b4ba-4977-a8f8-6e32df426fb8.png"]];
 
 HGPhotoItem *videoItem = [[HGPhotoItem alloc]initWithSourceView:self.imageview
@@ -26,7 +26,7 @@ HGPhotoItem *videoItem = [[HGPhotoItem alloc]initWithSourceView:self.imageview
 
 HGPhotoBrowser *browser = [HGPhotoBrowser browserWithPhotoItems:@[imageItem,videoItem] selectedIndex:0];
 [browser showFromViewController:self];
-                                                      
+```
 ## Author
 
 黄 纲, 362168751@qq.com
