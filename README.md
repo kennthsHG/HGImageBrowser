@@ -16,6 +16,8 @@ Use CocoaPods
 pod 'HGImageBrowser'
 ```
 # OVerView
+![image](https://github.com/kennthsHG/HGImageBrowser/blob/master/images/IMG_0522.PNG)
+![image](https://github.com/kennthsHG/HGImageBrowser/blob/master/images/IMG_0524.PNG)
 
 ## How to use it
 ```ruby
